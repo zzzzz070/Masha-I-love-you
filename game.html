@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Шаг 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div style="font-size: 40px; color: #ff1a1a; margin-bottom: -10px;">~♡~</div>
+        <h1>Ты почти у цели...</h1>
+        <p>Но сначала докажи, что ты меня знаешь! </p>
+        
+        <div id="quiz-container">
+            <div class="question-box" id="box-q1">
+                <p>1. Моя дата рождения (день.месяц.год)?</p>
+                <input type="text" id="q1" placeholder="Твой ответ...">
+                <button onclick="checkStep(1)">Далее</button>
+            </div>
+            
+            <div class="question-box" id="box-q2" style="display: none;">
+                <p>2. Как ты встретила меня одним словом?</p>
+                <input type="text" id="q2" placeholder="Твой ответ...">
+                <button onclick="checkStep(2)">Далее</button>
+            </div>
+            
+            <div class="question-box" id="box-q3" style="display: none;">
+                <p>3. Я люблю тебя ^^?</p>
+                <input type="text" id="q3" placeholder="Твой ответ...">
+                <button onclick="checkStep(3)">Открыть письмо</button>
+            </div>
+
+            <p id="quiz-error" style="color: #ff4d4d; display: none; margin-top: 15px; font-weight: bold;">Ой, кто-то забыл... Попробуй еще раз! ❤️</p>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

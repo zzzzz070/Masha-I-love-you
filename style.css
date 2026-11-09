@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background: linear-gradient(135deg, #0a0000, #1f0505);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+    overflow: hidden; 
+}
+
+.container {
+    padding: 30px 20px;
+    width: 90%;
+    max-width: 400px;
+    background: rgba(40, 5, 5, 0.8);
+    border-radius: 20px;
+    box-shadow: 0 0 25px rgba(255, 0, 0, 0.4);
+    position: relative;
+    z-index: 10; 
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #ff4d4d;
+}
+
+p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+input {
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    border: none; 
+    border-radius: 10px;
+    margin-bottom: 15px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+input:focus {
+    outline: 2px solid #4da6ff;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    background: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+.love-page {
+    background: #290c0c;
+    background: linear-gradient(135deg, #0a0000, #1f0505);
+}
+
+.letter-container {
+    background: rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 30px rgba(255, 77, 77, 0.2);
+}
+
+.letter-container h1 {
+    color: #ff4d4d;
+}
+
+/* Холст для сердечек */
+#heartCanvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
